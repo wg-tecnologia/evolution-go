@@ -1,5 +1,22 @@
 # Evolution Go
 
+> ⚠️ **IMPORTANTE - LEIA ANTES DE PROSSEGUIR**
+> 
+> Este projeto é um **FORK** do projeto open-source [EvolutionAPI/evolution-go](https://github.com/EvolutionAPI/evolution-go).
+> 
+> - ✅ Podemos evoluir o código conforme necessidade
+> - ✅ Precisamos manter o link com o projeto original
+> - ✅ Para atualizar: `git fetch upstream && git merge upstream/main`
+> 
+> **Repositórios que podem ser deletados:**
+> - ❌ `cantinho.lapis.na.mao` (projeto temporário de testes)
+> - ❌ `evolution-go-local` (testes locais)
+> - ❌ `whats-evolution-api-go` (fork desnecessário - usar este)
+> 
+> **Repositório oficial:** https://github.com/wg-tecnologia/evolution-go
+
+---
+
 API de WhatsApp de alta performance escrita em Go.
 
 <div align="center">
@@ -8,6 +25,7 @@ API de WhatsApp de alta performance escrita em Go.
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](./LICENSE)
 [![Go Version](https://img.shields.io/badge/Go-1.24+-00ADD8?logo=go)](https://golang.org/)
 [![Documentation](https://img.shields.io/badge/Documentation-Official-green)](https://docs.evolutionfoundation.com.br)
+[![Fork](https://img.shields.io/badge/Fork%20of-EvolutionAPI-blue)](https://github.com/EvolutionAPI/evolution-go)
 
 </div>
 
@@ -233,3 +251,36 @@ evolution-go/
 ## Licença
 
 Apache License 2.0
+
+---
+
+## Atualizações do Projeto Original
+
+Este é um fork de [EvolutionAPI/evolution-go](https://github.com/EvolutionAPI/evolution-go). Para manter atualizado com o projeto original:
+
+```bash
+# Adicionar upstream (se não existir)
+git remote add upstream https://github.com/EvolutionAPI/evolution-go.git
+
+# Buscar atualizações
+git fetch upstream
+
+# Verificar diferenças
+git log --oneline upstream/main
+
+# Fazer merge das atualizações
+git merge upstream/main
+
+# Resolver conflitos se necessário
+
+# Push para o fork
+git push origin main
+```
+
+### Rebase (alternativa ao merge)
+
+```bash
+git fetch upstream
+git rebase upstream/main
+git push --force-with-lease origin main
+```
